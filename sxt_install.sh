@@ -1,15 +1,15 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='apollon.conf'
-CONFIGFOLDER='/root/.ApollonCore'
-COIN_DAEMON='apollond'
-COIN_CLI='apollon-cli'
+CONFIG_FILE='SixtyNine.conf'
+CONFIGFOLDER='/root/.SixtyNine'
+COIN_DAEMON='SixtyNined'
+COIN_CLI='SixtyNine-cli'
 COIN_PATH='/usr/local/bin/'
 KERN_ARCH=$(uname -m)
-COIN_TGZ="https://github.com/apollondeveloper/ApollonCore/releases/download/v2.0.1.0/apollond-2.0.1-${KERN_ARCH}-linux.tar.gz"
+COIN_TGZ="https://github.com/SixtyNineDev/SixtyNine-Coin/releases/download/1.0.0/SixtyNine-Linux.tar.gz"
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='ApollonCore'
+COIN_NAME='SixtyNine'
 COIN_PORT=12218
 RPC_PORT=12217
 
